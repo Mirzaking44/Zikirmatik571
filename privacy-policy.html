@@ -2,162 +2,166 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Gizlilik Politikası - Zikirmatik 571</title>
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-  h1 { color: #00e59b; }
-  h2 { margin-top: 30px; }
-  .badge { display: inline-block; background: #00e59b; color: #000; padding: 2px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; }
-  .badge-red { background: #ff4d4d; color: #fff; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 16px 40px;
+    line-height: 1.7;
+    color: #333;
+    font-size: 15px;
+    background: #fff;
+  }
+  h1 {
+    color: #00c07a;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .subtitle {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+  }
+  h2 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #111;
+    border-bottom: 2px solid #00e59b;
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+  p, li { margin-bottom: 8px; font-size: 0.92rem; color: #444; }
+  ul { padding-left: 20px; margin-bottom: 10px; }
+  li { margin-bottom: 6px; }
+  strong { color: #222; }
+
+  /* Tablo - mobilde yatay scroll */
+  .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 14px 0;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+  }
+  table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 9px 11px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #f5f5f5; font-weight: 700; color: #222; }
+  tr:nth-child(even) td { background: #fafafa; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .badge-green  { background: #00e59b; color: #000; }
+  .badge-blue   { background: #4d94ff; color: #fff; }
   .badge-yellow { background: #ffd700; color: #000; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-  th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-  th { background: #f5f5f5; }
+  .badge-gray   { background: #ddd;    color: #555; }
+
+  hr { border: none; border-top: 1px solid #eee; margin: 28px 0 16px; }
+  .footer { text-align: center; color: #aaa; font-size: 0.8rem; }
 </style>
 </head>
 <body>
-<h1>🔒 Gizlilik Politikası & Veri Güvenliği</h1>
-<p><strong>Son güncelleme:</strong> 2 Mayıs 2026</p>
+
+<h1>🔒 Gizlilik Politikası &amp; Veri Güvenliği</h1>
+<p class="subtitle"><strong>Son güncelleme:</strong> 4 Mayıs 2026</p>
 
 <h2>1. Giriş</h2>
-<p>Zikirmatik 571 ("uygulama") olarak gizliliğinize saygı duyuyoruz. Bu politika, uygulamamızı kullanırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve Google Play Store'un Veri Güvenliği (Data Safety) bölümünde beyan ettiğimiz bilgileri açıklar.</p>
+<p>Zikirmatik 571 olarak gizliliğinize önem veriyoruz. Bu metin, Google Play <strong>Veri Güvenliği (Data Safety)</strong> beyanlarımızı ve uygulamamızın verilerinizi nasıl işlediğini açıklar.</p>
 
-<h2>2. Veri Güvenliği Beyanı (Google Play Data Safety)</h2>
-<p>Aşağıdaki tablo, uygulamamızın hangi veri türlerini topladığını, paylaştığını ve nasıl kullandığını gösterir:</p>
+<h2>2. Veri Güvenliği Beyanı</h2>
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Veri Türü</th>
+        <th>Toplanıyor mu?</th>
+        <th>Paylaşılıyor mu?</th>
+        <th>Kullanım Amacı</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Konum (Yaklaşık)</strong></td>
+        <td><span class="badge badge-yellow">Evet</span></td>
+        <td><span class="badge badge-blue">Evet</span></td>
+        <td>Namaz vakitlerini hesaplamak için sadece şehir bazlı yaklaşık konum Aladhan API'sine gönderilir.</td>
+      </tr>
+      <tr>
+        <td><strong>Cihaz ve Reklam Kimliği</strong></td>
+        <td><span class="badge badge-yellow">Evet</span></td>
+        <td><span class="badge badge-blue">Evet</span></td>
+        <td>Google AdMob reklamlarının sunulması ve dolandırıcılığın önlenmesi için reklam kimliği kullanılır.</td>
+      </tr>
+      <tr>
+        <td><strong>Uygulama İçi Satın Almalar</strong></td>
+        <td><span class="badge badge-yellow">Evet</span></td>
+        <td><span class="badge badge-gray">Hayır</span></td>
+        <td>Premium özellikler için Google Play faturalandırma sistemi kullanılır. Ödeme bilgileriniz bize ulaşmaz.</td>
+      </tr>
+      <tr>
+        <td><strong>Kullanıcı Aktivitesi</strong></td>
+        <td><span class="badge badge-gray">Hayır</span></td>
+        <td><span class="badge badge-gray">Hayır</span></td>
+        <td>Zikir sayılarınız ve kayıtlarınız yalnızca cihazınızda (Yerel Depolama) saklanır.</td>
+      </tr>
+      <tr>
+        <td><strong>Kişisel Bilgiler</strong></td>
+        <td><span class="badge badge-gray">Hayır</span></td>
+        <td><span class="badge badge-gray">Hayır</span></td>
+        <td>Ad, e-posta veya telefon numarası toplanmaz.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<table>
-  <tr>
-    <th>Veri Türü</th>
-    <th>Toplanıyor mu?</th>
-    <th>Paylaşılıyor mu?</th>
-    <th>Kullanım Amacı</th>
-  </tr>
-  <tr>
-    <td><strong>Konum (Yaklaşık)</strong></td>
-    <td><span class="badge badge-yellow">Evet (İsteğe bağlı)</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>Namaz vakitlerini hesaplamak için şehir bazlı yaklaşık konum kullanılır. Kesin GPS verisi toplanmaz. Kullanıcı izniyle alınır.</td>
-  </tr>
-  <tr>
-    <td><strong>Kişisel Bilgiler</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>E-posta / Hesap Bilgileri</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>Kullanıcı Aktiviteleri</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>Zikir sayacı verileri yalnızca cihazda (localStorage) saklanır.</td>
-  </tr>
-  <tr>
-    <td><strong>Uygulama İçi Satın Almalar</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>Cihaz Kimliği</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>Ses / Görüntü Kaydı</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>Kamera / Fotoğraflar</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>Kişiler / Rehber</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>Takvim / Ajanda</strong></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>—</td>
-  </tr>
-  <tr>
-    <td><strong>Sensör Verileri</strong></td>
-    <td><span class="badge badge-yellow">Evet (İsteğe bağlı)</span></td>
-    <td><span class="badge" style="background:#ddd;">Hayır</span></td>
-    <td>"Eller Serbest" modu için yakınlık sensörü (Proximity Sensor) kullanılır. Veri cihaz dışına çıkmaz.</td>
-  </tr>
-</table>
-
-<h3>📋 Özet: Veri Toplama ve Güvenlik</h3>
+<h2>3. Öne Çıkan Bilgilendirmeler</h2>
 <ul>
-  <li><strong>✅ Hiçbir kişisel veri toplanmaz</strong> — Ad, soyad, e-posta, telefon, adres gibi bilgiler istenmez.</li>
-  <li><strong>✅ Hesap zorunluluğu yoktur</strong> — Uygulama kayıt olmadan kullanılabilir.</li>
-  <li><strong>✅ Veriler cihazda kalır</strong> — Tüm kullanıcı verileri (zikir listeleri, sayaç, tercihler) yalnızca cihazınızda localStorage'da saklanır.</li>
-  <li><strong>✅ Reklam ve analitik yoktur</strong> — Uygulama reklam göstermez, kullanıcı takibi yapmaz.</li>
-  <li><strong>✅ Üçüncü tarafla veri paylaşılmaz</strong> — Toplanan hiçbir veri satılmaz, kiralanmaz veya paylaşılmaz.</li>
-  <li><strong>⚠️ Konum (isteğe bağlı)</strong> — Namaz vakitleri için şehir bazlı yaklaşık konum kullanılabilir. Kullanıcı izniyle alınır, yalnızca Aladhan API'sine iletilir.</li>
-  <li><strong>⚠️ Sensör (isteğe bağlı)</strong> — "Eller Serbest" modu etkinleştirilirse yakınlık sensörü kullanılır. Veri cihaz dışına çıkmaz.</li>
+  <li><strong>Reklamlar (Google AdMob):</strong> Uygulamamız reklam içerir. AdMob, size uygun reklamlar göstermek için cihazınızın reklam kimliğini işleyebilir.</li>
+  <li><strong>Konum İzni:</strong> Namaz vakitleri özelliği için konum izni istenir. Bu veri hiçbir sunucuda saklanmaz, sadece anlık vakit hesaplama için üçüncü taraf API'ye (Aladhan) iletilir.</li>
+  <li><strong>Yerel Depolama:</strong> Uygulama içindeki tüm zikir kayıtlarınız cihazınızın belleğinde tutulur. Uygulamayı sildiğinizde bu veriler de silinir.</li>
 </ul>
 
-<h2>3. Hassas Veri Bilgilendirmesi</h2>
-<p>Uygulamamız <strong>hassas veri</strong> olarak kabul edilebilecek hiçbir bilgiyi toplamaz, işlemez veya saklamaz:</p>
+<h2>4. Üçüncü Taraf Hizmetler</h2>
+<p>Hizmet sağlamak için aşağıdaki güvenilir sağlayıcılarla çalışıyoruz:</p>
 <ul>
-  <li>❌ Irk veya etnik köken</li>
-  <li>❌ Siyasi görüş</li>
-  <li>❌ Dini veya felsefi inanç (uygulamanın içeriği İslami olmakla birlikte, kullanıcının dini inancına dair <strong>hiçbir veri kaydedilmez veya toplanmaz</strong>)</li>
-  <li>❌ Sendika üyeliği</li>
-  <li>❌ Genetik veri</li>
-  <li>❌ Biyometrik veri</li>
-  <li>❌ Sağlık verisi</li>
-  <li>❌ Cinsel hayat veya yönelim</li>
-  <li>❌ Ceza mahkumiyeti</li>
+  <li><strong>Google AdMob:</strong> Reklam gösterimi.</li>
+  <li><strong>Aladhan API:</strong> Namaz vakitleri ve sesli Kur'an dosyaları.</li>
+  <li><strong>Google Play Billing:</strong> Uygulama içi satın alma işlemleri.</li>
 </ul>
 
-<h2>4. Toplanan Bilgiler</h2>
-<p><strong>Konum Bilgisi:</strong> Namaz vakitlerini bulmak için konumunuzu kullanabilirsiniz. Bu bilgi yalnızca sizin izninizle alınır ve sunucularımıza gönderilmez, doğrudan namaz vakitleri API'sine (Aladhan) iletilir.</p>
-<p><strong>Kullanıcı Verileri:</strong> Uygulama içinde oluşturduğunuz zikir listeleri, sayaç verileri ve tercihleriniz yalnızca cihazınızda (localStorage) saklanır. Bu veriler bizimle paylaşılmaz.</p>
+<h2>5. Veri Silme Hakları</h2>
+<p>Uygulamamız kişisel bir veri toplamadığı için sunucularımızda silinecek bir veriniz bulunmamaktadır. Ancak reklam kimliğinizi cihaz ayarlarınızdan sıfırlayabilir veya uygulama verilerini telefon ayarlarından temizleyerek tüm yerel kayıtlarınızı silebilirsiniz.</p>
 
-<h2>5. Üçüncü Taraf Hizmetler</h2>
-<p>Uygulamamız, namaz vakitlerini göstermek için <strong>Aladhan API</strong> (aladhan.com) hizmetini kullanır. Bu API'ye yalnızca şehir adı veya koordinat bilgisi gönderilir. Aladhan'ın kendi gizlilik politikası geçerlidir.</p>
-<p>Kur'an-ı Kerim sesli dinleme özelliği için <strong>cdn.aladhan.com</strong> üzerinden ses dosyaları yayınlanır. Bu işlem sırasında herhangi bir kişisel veri paylaşılmaz.</p>
-
-<h2>6. Reklam ve Analitik</h2>
-<p>Uygulamamız reklam veya analitik hizmeti kullanmamaktadır. Herhangi bir veri üçüncü taraflarla paylaşılmaz.</p>
-
-<h2>7. Çocuk Gizliliği</h2>
-<p>Uygulamamız her yaş grubuna uygundur ve çocuklardan bilerek herhangi bir kişisel bilgi toplamaz.</p>
-
-<h2>8. Veri Saklama ve Silme</h2>
-<p>Tüm kullanıcı verileri cihazınızda saklanır. Verilerinizi silmek için:</p>
-<ul>
-  <li><strong>Uygulama içinden:</strong> Ayarlar → "Tüm Verileri Sıfırla" butonunu kullanabilirsiniz.</li>
-  <li><strong>Uygulama verilerini temizleme:</strong> Telefon Ayarları → Uygulamalar → Zikirmatik 571 → Depolama → Verileri Temizle adımlarını izleyebilirsiniz.</li>
-  <li><strong>Uygulamayı kaldırma:</strong> Uygulamayı sildiğinizde tüm veriler otomatik olarak silinir.</li>
-</ul>
-
-<h2>9. İletişim</h2>
-<p>Gizlilik politikamız hakkında sorularınız varsa bizimle iletişime geçin:</p>
-<p>E-posta: jagube9@gmail.com</p>
-<p>veya</p>
-<p>Google Play Store sayfamız üzerinden iletişime geçebilirsiniz.</p>
-
-<h2>10. Değişiklikler</h2>
-<p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayınlandığı anda geçerlilik kazanır.</p>
+<h2>6. İletişim</h2>
+<p>Sorularınız için: <strong>jagube9@gmail.com</strong></p>
 
 <hr>
-<p style="text-align:center; color:#888; font-size:0.85rem;">Zikirmatik 571 © 2025-2026 — Tüm hakları saklıdır.</p>
+<p class="footer">Zikirmatik 571 © 2026</p>
+
 </body>
 </html>
